@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    kotlin("plugin.serialization") version "1.9.0"
 }
 
 android {
@@ -51,6 +52,22 @@ android {
 }
 
 dependencies {
+    implementation(libs.bom.v311)
+    implementation(libs.postgrest.kt)
+    implementation(libs.ktor.client.android)
+    implementation(libs.auth.kt)
+    implementation(libs.supabase.auth.kt)
+    implementation(libs.ktor.client.okhttp)
+    implementation(libs.supabase.kt)
+    implementation(libs.supabase.postgrest.kt)
+    implementation(libs.realtime.kt)
+    implementation(libs.cardview)
+    implementation(libs.okhttp)
+    implementation(libs.gson)
+    implementation(libs.supabase.postgrest)
+    implementation(libs.supabase.gotrue)
+    implementation(libs.kotlinx.serialization.json)
+    implementation(libs.kotlinx.coroutines.android)
     implementation(libs.androidx.recyclerview)
     implementation(libs.navigation.fragment.ktx)
     implementation(libs.navigation.ui.ktx)
